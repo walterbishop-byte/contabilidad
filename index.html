@@ -86,7 +86,7 @@
   .features-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
   .feature-list{display:flex;flex-direction:column;gap:32px}
   .feature-icon-row{display:flex;align-items:center;gap:12px;margin-bottom:8px}
-  .feature-title{font-size:16px;font-weight:500;color:var(--text-dark);margin:0}
+  .feature-title{font-size:19px;font-weight:500;color:var(--text-dark);margin:0}
   .feature-desc{font-size:14px;color:var(--text-mid);line-height:1.7}
   .feature-cta{margin-top:32px}
   .btn-primary-light{background:var(--text-dark);color:#fff;padding:13px 26px;border-radius:10px;font-size:14px;font-weight:500;border:none;cursor:pointer;transition:.2s}
@@ -98,10 +98,10 @@
 
   /* ── FEATURES 3-COL GRID ── */
   .feat3-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
-  .feat3-card{background:linear-gradient(160deg,#fffefb 0%,rgba(245,241,236,0.6) 100%);border:1px solid var(--border-light);border-radius:16px;padding:36px 32px;transition:.3s;cursor:pointer}
-  .feat3-card:hover{border-color:rgba(239,68,68,0.3);box-shadow:0 16px 40px rgba(239,68,68,0.08);transform:translateY(-3px)}
+  .feat3-card{background:#fff;border:1px solid transparent;border-radius:16px;padding:36px 32px;transition:.3s;cursor:pointer}
+  .feat3-card:hover{box-shadow:0 16px 40px rgba(239,68,68,0.08);transform:translateY(-3px)}
   .feat3-icon{width:44px;height:44px;border-radius:12px;background:#f0eeeb;border:1px solid rgba(239,68,68,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
-  .feat3-title{font-size:16px;font-weight:500;color:var(--text-dark);margin-bottom:10px}
+  .feat3-title{font-size:19px;font-weight:500;color:var(--text-dark);margin-bottom:10px}
   .feat3-desc{font-size:13px;color:var(--text-mid);line-height:1.6;margin-bottom:16px}
   .feat3-cta{font-size:13px;font-weight:500;color:var(--text-dark);display:inline-flex;align-items:center;gap:4px;cursor:pointer}
 
@@ -113,8 +113,8 @@
   .badge-tributaria{display:inline-flex;align-items:center;gap:8px;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.2);border-radius:100px;padding:6px 14px;margin-bottom:28px}
   .badge-tributaria span{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--red2)}
   .modelos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
-  .modelo-card{background:linear-gradient(160deg,#161410 0%,#151412 100%);border:1px solid var(--border-dark);border-radius:16px;padding:32px;transition:.3s;cursor:pointer;display:flex;flex-direction:column;gap:14px}
-  .modelo-card:hover{border-color:rgba(239,68,68,0.3);transform:translateY(-4px);box-shadow:0 16px 40px rgba(239,68,68,0.08)}
+  .modelo-card{background:linear-gradient(160deg,#161410 0%,#151412 100%);border:1px solid transparent;border-radius:16px;padding:32px;transition:.3s;cursor:pointer;display:flex;flex-direction:column;gap:14px}
+  .modelo-card:hover{background:linear-gradient(160deg,#161410 0%,#151412 100%) padding-box,linear-gradient(135deg,rgba(239,68,68,0.35),rgba(239,68,68,0.05) 60%,transparent) border-box;border:1px solid transparent;transform:translateY(-4px);box-shadow:0 16px 40px rgba(239,68,68,0.06)}
   .modelo-icon{width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center}
   .modelo-title{font-size:16px;font-weight:500;color:#fff}
   .modelo-desc{font-size:13px;color:#888;line-height:1.6;flex:1}
@@ -140,10 +140,10 @@
   /* ── SUPPORT / "DA AÚN MÁS" ── */
   .support{padding:80px 24px;background:var(--bg-light)}
   .support-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
-  .supp-card{padding:36px 32px;background:linear-gradient(160deg,#fffefb 0%,rgba(245,241,236,0.6) 100%);border:1px solid var(--border-light);border-radius:16px;transition:.3s;cursor:pointer}
-  .supp-card:hover{border-color:rgba(239,68,68,0.3);box-shadow:0 16px 40px rgba(239,68,68,0.1);transform:translateY(-3px)}
+  .supp-card{padding:36px 32px;background:#fff;border:1px solid transparent;border-radius:16px;transition:.3s;cursor:pointer}
+  .supp-card:hover{box-shadow:0 16px 40px rgba(239,68,68,0.1);transform:translateY(-3px)}
   .supp-icon{width:44px;height:44px;border-radius:12px;background:#f0eeeb;border:1px solid rgba(239,68,68,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
-  .supp-title{font-size:16px;font-weight:500;color:var(--text-dark);margin-bottom:10px}
+  .supp-title{font-size:19px;font-weight:500;color:var(--text-dark);margin-bottom:10px}
   .supp-desc{font-size:13px;color:var(--text-mid);line-height:1.6}
 
   /* ── CTA ── */
@@ -287,7 +287,7 @@
       <h2 class="section-title">Contabilidad automatizada</h2>
       <p style="font-size:16px;color:var(--text-mid);line-height:1.7">Cada factura hecha en Holded genera automáticamente un asiento en el libro diario, que se mantiene actualizado. Sin descuadres, sin estrés. Además, puedes bloquear periodos contables.</p>
     </div>
-    <img src="Contabilidad_1.webp" alt="Contabilidad automatizada" style="width:100%;border-radius:16px;display:block;border:1px solid var(--border-light)">
+    <img src="Contabilidad_1.webp" alt="Contabilidad automatizada" style="width:100%;border-radius:16px;display:block">
   </div>
 </section>
 
@@ -383,7 +383,7 @@
 
       <!-- Left: image -->
       <div>
-        <img src="CONTABILIDAD_COLABORATOIVA.jpg" alt="Contabilidad colaborativa" style="width:100%;border-radius:16px;display:block;border:1px solid var(--border-light)">
+        <img src="CONTABILIDAD_COLABORATOIVA.jpg" alt="Contabilidad colaborativa" style="width:100%;border-radius:16px;display:block">
       </div>
 
       <!-- Right: text -->
